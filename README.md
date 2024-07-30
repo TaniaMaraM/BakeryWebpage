@@ -2,7 +2,7 @@
 
 Overview
 
-This project showcases a fictional bakery specializing in cookies filled with rich, creamy brigadeiro. This README will guide you through the structure and functionality of the HTML, CSS, and JavaScript code that powers the Sweet Bites website.
+This project showcases a fictional bakery specializing in cookies. This README will guide you through the structure and functionality of the HTML, CSS, and JavaScript code that powers the Sweet Bites website.
 
 The Sweet Bites website is designed to provide a delightful user experience with information about the bakery, its mission, and a variety of cookies available for order. The website includes an interactive shopping cart, animations, and a responsive design.
 
