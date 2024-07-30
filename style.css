@@ -1,0 +1,560 @@
+
+    body{
+    background: url(/img/background.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    }
+
+    h4{
+        font-family: Cinzel, serif; 
+        color: #A178B2;
+        font-weight: 600;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0;
+    }
+
+    h5{
+        font-family: Cinzel, serif; 
+        color: #57BDC2;
+        font-weight: 600;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0;
+    }
+
+    h3{
+        font-family: Cinzel, serif; 
+        color:#EA5785;
+        font-weight: 800;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0;
+    }
+
+    p{
+        font-family: "Della Respira";
+        color:#4A4A4A;
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: center;
+        margin: 0; 
+        
+
+    }
+
+   /* NAV STYLE */
+    nav ul {
+        background-color:#EA5785;
+        color: white;
+        font-family: Cinzel, serif;
+        font-size: 1.3em;
+        font-weight: 800;
+        display: flex;
+        justify-content:space-around;
+        list-style-type: none;
+        align-items: center;
+        margin-top: 350px;
+        padding: 18px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: pointer;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+    }
+
+    nav ul li a:hover {
+        background-color: #A178B2;
+    }
+
+       /* SHOPPING CART */
+
+    .cart {
+        position: fixed;
+        display:flex;
+        align-items: center;
+        right: 20px; /* Distância do canto esquerdo */
+        z-index: 1000; /* Para garantir que o ícone fique acima dos outros conteúdos */
+        cursor: pointer;
+    }
+    
+    .cart img {
+        width: 40px; 
+        height: auto;
+    }
+    
+    #cart-count {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: #EA5785;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 14px;
+        font-family: 'Cinzel', serif;
+    }
+
+    #cart-items {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #cart-items li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-family: Cinzel, serif;
+        font-weight: 600;
+        color: #4A4A4A;
+    }
+    
+    .your-cart {
+        font-family: Cinzel, serif;
+        font-weight: 800;
+        color: #A178B2;
+        text-decoration:underline;
+        
+    }
+    
+    #total-price {
+        font-family: Cinzel, serif;
+        font-weight: bold;
+        font-weight: 700;
+        font-size: 20px;
+        color:#A178B2;
+        margin-top: 20px;
+    }
+    
+
+    nav ul li img:hover{
+        transform: scale(1.2);
+    }
+
+    /* Modal do Carrinho */
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Um valor alto para garantir que o modal fique acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    }
+
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    /* Botão de exclusão */
+    .delete-btn {
+    color: #EA5785;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    .delete-btn:hover {
+    color: black;
+    }
+
+    /* HEADER STYLE */
+    header img {
+        width: 600px;
+        height: auto;
+        margin-top: -550px;
+    }
+
+    .center{
+        text-align: center;
+        
+    }
+
+    h1 {
+        font-family: Cinzel, serif;
+        color: #A178B2;
+        max-width: 90%;
+        margin: 10px auto;
+        height: auto;
+        font-weight:800;
+        font-size: 2.8em;
+        text-align: center;
+    }
+    
+    h2 {
+        max-width: 80%;
+        margin: 10px auto;
+        padding:4px 8px;
+        background: #A178B200;
+        color: #7E7E7E;
+        border-radius: 19px;
+        font-family: "Della Respira";
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.5;
+        text-align: center; 
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Ajusta o espaço entre as imagens */
+        margin-top: 500px; 
+    }
+    
+    .best, .round1, .round2 {
+        width: 100%;
+        max-width: 300px; /* Limita a largura máxima das imagens */
+        height: auto;
+        border-radius: 50%; /* Faz com que as imagens sejam redondas */
+    }
+    .best {
+        max-height:390px;
+    }
+
+    /* ABOUT US */
+
+    .about1 {
+        display: flex;
+        align-items: flex-start; 
+        object-fit: cover;
+        justify-content: space-around;
+        margin: 80px auto; 
+        max-width: 1000px; 
+    }
+
+    .about1 img {
+        width: 250px;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover; /* Garante que a imagem mantenha sua proporção */
+        transition: transform 0.3s ease; 
+    }
+
+    .about1 img:hover {
+    transform: scale(1.2);
+    }
+
+    .content1{
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        justify-content: center; /* Alinha o conteúdo verticalmente */
+        gap: 30px; /* Espaço entre o título e o parágrafo */
+        max-width: 500px; /* Define uma largura máxima para o conteúdo */
+        padding: 10px; /* Adiciona preenchimento interno */
+    }
+
+    .about2 {
+        display: flex;
+        align-items: flex-start; 
+        object-fit: cover;
+        justify-content: space-around;
+        margin: 80px auto; 
+        max-width: 1000px; 
+    }
+
+    .about2 img {
+        width: 250px;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover; /* Garante que a imagem mantenha sua proporção */
+        transition: transform 0.3s ease; 
+    }
+
+    .about2 img:hover {
+    transform: scale(1.2);
+    }
+
+    .content2{
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        justify-content: center; /* Alinha o conteúdo verticalmente */
+        gap: 30px; /* Espaço entre o título e o parágrafo */
+        max-width: 500px; /* Define uma largura máxima para o conteúdo */
+        padding: 10px; /* Adiciona preenchimento interno */
+    }
+
+        /* COOKIESGIF */
+
+        .cookies-container {
+
+            text-align: center; /* Centraliza os itens inline-block no contêiner */
+        }
+        .cookies {
+            transform: rotate(-90deg); 
+            display: inline-block; 
+            width: auto; 
+            max-width: 250px; 
+            height: auto; 
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+       /* ORDER NOW */
+
+       .redvelvet {
+        display: flex;
+        align-items: flex-start; 
+        object-fit: cover;
+        justify-content: space-around;
+        margin: 80px auto; 
+        max-width: 1000px; 
+    }
+
+    .redvelvet img {
+        width: 250px;
+        height: auto;
+        border-radius: 250px;
+        object-fit: cover; /* Garante que a imagem mantenha sua proporção */
+        transition: transform 0.3s ease; 
+    }
+
+    .redvelvet img:hover {
+        transform: scale(1.2);
+    }
+
+    .red-text{
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        justify-content: center; /* Alinha o conteúdo verticalmente */
+        gap: 30px; /* Espaço entre o título e o parágrafo */
+        max-width: 500px; /* Define uma largura máxima para o conteúdo */
+        padding: 10px; /* Adiciona preenchimento interno */
+    }
+
+    .order-button{
+        width: auto;
+        height: auto;
+        text-align: center;
+        padding: 5px;
+        background: #EA5785;
+        color: #FFFFFF;
+        border-radius: 3px 3px 3px 3px;
+        border: none;
+        font-family: "Cinzel, serif";
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .order-button:hover {
+    background: #c9477076;
+    }
+
+    .milkyway {
+        display: flex;
+        align-items: flex-start; 
+        object-fit: cover;
+        justify-content: space-around;
+        margin: 80px auto; 
+        max-width: 1000px; 
+    }
+
+    .milkyway img {
+        width: 250px;
+        height: auto;
+        border-radius: 250px;
+        object-fit: cover; 
+        transition: transform 0.3s ease; 
+    }
+
+    .milkyway img:hover {
+        transform: scale(1.2);
+    }
+
+    .milky-text{
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        justify-content: center; /* Alinha o conteúdo verticalmente */
+        gap: 30px; /* Espaço entre o título e o parágrafo */
+        max-width: 500px; /* Define uma largura máxima para o conteúdo */
+        padding: 10px; /* Adiciona preenchimento interno */
+
+    }
+
+    .brigadeiro {
+        display: flex;
+        align-items: flex-start; 
+        object-fit: cover;
+        justify-content: space-around;
+        margin: 80px auto; 
+        max-width: 1000px; 
+    }
+
+    .brigadeiro img {
+        width: 250px;
+        height: auto;
+        border-radius: 250px;
+        object-fit: cover; /* Garante que a imagem mantenha sua proporção */
+        transition: transform 0.3s ease; 
+    }
+
+    .brigadeiro img:hover {
+        transform: scale(1.2);
+    }
+
+    .brigadeiro-text{
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        justify-content: center; /* Alinha o conteúdo verticalmente */
+        gap: 30px; /* Espaço entre o título e o parágrafo */
+        max-width: 500px; /* Define uma largura máxima para o conteúdo */
+        padding: 10px; /* Adiciona preenchimento interno */
+    }
+    .coconut {
+        display: flex;
+        align-items: flex-start; 
+        object-fit: cover;
+        justify-content: space-around;
+        margin: 80px auto; 
+        max-width: 1000px; 
+    }
+
+    .coconut img {
+        width: 250px;
+        height: auto;
+        border-radius: 250px;
+        object-fit: cover; 
+        transition: transform 0.3s ease; 
+    }
+
+    .coconut img:hover {
+        transform: scale(1.2);
+    }
+
+    .coconut-text{
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        justify-content: center; /* Alinha o conteúdo verticalmente */
+        gap: 30px; /* Espaço entre o título e o parágrafo */
+        max-width: 500px; /* Define uma largura máxima para o conteúdo */
+        padding: 10px; /* Adiciona preenchimento interno */
+    }
+    .churros {
+        display: flex;
+        align-items: flex-start; 
+        object-fit: cover;
+        justify-content: space-around;
+        margin: 80px auto; 
+        max-width: 1000px; 
+    }
+
+    .churros img {
+        width: 250px;
+        height: auto;
+        border-radius: 250px;
+        object-fit: cover; /* Garante que a imagem mantenha sua proporção */
+        transition: transform 0.3s ease; 
+    }
+
+    .churros img:hover {
+        transform: scale(1.2);
+    }
+
+    .churros-text{
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        justify-content: center; /* Alinha o conteúdo verticalmente */
+        gap: 30px; /* Espaço entre o título e o parágrafo */
+        max-width: 500px; /* Define uma largura máxima para o conteúdo */
+        padding: 10px; /* Adiciona preenchimento interno */
+    }
+
+     /* FIND US */
+
+    .location {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; 
+    }
+    
+    .pfont{
+        font-size: 14px;
+        color:#A178B2;
+        font-family: Cinzel, serif;
+        font-weight: 700;
+        
+    }
+
+    iframe{
+        width: 80%;
+        height: 500px;
+    }
+
+     /* FOOTER */
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #EA5785;
+        padding: 16px;
+        margin-top: 20px; /* Adiciona espaço acima do footer */
+
+    }
+    
+    .footer-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer img {
+        width: 40px; 
+        height: auto;
+        margin-bottom: 5px; /* Espaço entre o ícone e o texto */
+    }
+
+    .p-footer {
+        color: white;
+        font-family: 'Cinzel', serif;
+        font-weight: 600;
+        font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+        margin: 0;
+    }
+
+    .footer-item:hover{
+        transform: scale(1.2);
+    }
+
+  
+      
+    

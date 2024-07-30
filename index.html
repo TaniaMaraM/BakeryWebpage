@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sweet Bites</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Della+Respira&display=swap');
+    </style>        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+        
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li> <a href="#home">Home</a> </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li> <a href="#find">Find Us!</a> </li>
+            <li class="cart">
+            <img src="./img/cart.png" alt="cart-icon" id="cart-icon">
+             <span id="cart-count">0</span>
+        </ul>
+    </nav>
+<header>
+    <div id="home" class="center">
+        <img src="./img/logosweet.png" alt="logo">
+    </div>
+    <div>
+        <h1 class="animate__animated animate__zoomIn"> Welcome to Sweet Bites, where passion meets flavor in every bite! </h1>
+        <h2 class="animate__animated animate__fadeIn animate__delay-1s"> Our cookies are filled with rich, creamy brigadeiro, bringing a taste of Brazil to your home. Created by a Brazilian baker with a love for sweet treats, each cookie is a masterpiece of indulgence. </h2>
+    
+        <div class="image-container">
+            <img src="./img/bestsellers.gif" alt="cookies1" class="best">
+            <img src="./img/bag.gif" alt="cookies2" class="round1">
+            <img src="./img/me.gif" alt="cookies3" class="round2">
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="about1" id="about">
+        <img src="./img/about1.jpg" alt="eatingcookie">
+        <div class="content1">
+        <h4> Our Journey </h4>
+        <p>Our founder, Tania Mara Marcos, grew up in a household where baking was a cherished tradition. Inspired by her family's recipes and the rich flavors of Brazil, she set out to create cookies that would bring joy and delight to everyone who tasted them. Today, Sweet Bites continues this tradition, combining the authentic taste of Brazilian brigadeiro with modern baking techniques.</p>
+        </div>    
+    </section>
+    <section class="about2">
+        <div class="content2">
+        <h4> Our Mission </h4>
+        <p>At Sweet Bites, our mission is simple: to bring happiness to our customers, one bite at a time. We believe in celebrating life's small moments and creating memories through our delicious cookies. Every cookie we make is a testament to our love for baking and our commitment to quality.</p>
+        </div>
+        <img src="./img/about2.jpg" alt="person">
+    </section>
+
+        <div class="cookies-container">
+            <img src="./img/cookiesmove.gif" alt="cookiesgif" class="cookies">
+            <img src="./img/cookiesmove.gif" alt="cookiesgif" class="cookies">
+            <img src="./img/cookiesmove.gif" alt="cookiesgif" class="cookies">
+        </div>
+
+    <section class="order" id="order">   
+        <section class="redvelvet">
+            <img src="./img/redvelvet.jpg" alt="red velvet cookie">
+            <div class="red-text">
+                <h4>Red Velvet Cheesecake</h4>
+                <p>Treat yourself to our rich red velvet cookie dough, loaded with smooth white Belgian chocolate chips and filled with a creamy, homemade cheesecake center.It's like biting into a slice of heaven.</p>
+                <button class="order-button"> ADD TO BAG - €4.50 </button>
+            </div>
+        </section>
+
+        <section class="milkyway">
+        <div class="milky-text">
+            <h5>Milky Way</h5>
+            <p>Enjoy our dark cacao cookie dough, filled with a creamy milk filling and topped with Nido milk powder. Each bite is a chocolatey, creamy delight that melts in your mouth.</p>
+            <button class="order-button"> ADD TO BAG - €4.50 </button>
+            </div>
+            <img src="./img/milkyway.jpg" alt=" milkyway cookie">
+        </section>
+
+        <section class="brigadeiro">
+            <img src="./img/brigadeiro.jpg" alt="brigadeiro cookie">
+            <div class="brigadeiro-text">
+                <h4>Brigadeiro Dream</h4>
+                <p>Dive into our classic cookie dough, packed with crunchy chocolate pieces and milk Belgian chocolate, all surrounding a rich, handmade brigadeiro filling. It's a taste of Brazil in every bite.</p>
+                <button class="order-button"> ADD TO BAG - €4.50 </button>
+            </div>
+        </section>
+
+        <section class="coconut">
+            <div class="coconut-text">
+                <h5>Coconut Paradise</h5>
+                <p>Enjoy the perfect blend of flavors with our chocolate cookie dough, filled with smooth white Belgian chocolate chips and a creamy coconut center. It's a tropical escape in a cookie.</p>
+                <button class="order-button"> ADD TO BAG - €4.50 </button>
+                </div>
+                <img src="./img/coconut.jpg" alt="coconut cookie">
+            </section>
+
+            <section class="churros">
+                <img src="./img/churros.jpg" alt="churros cookie">
+                <div class="churros-text">
+                    <h4>Churros</h4>
+                    <p>Experience the warmth of our cinnamon churros cookie dough, filled with gooey milk Belgian chocolate and the best dulce de leche. It's like a hug in cookie form.</p>
+                    <button class="order-button"> ADD TO BAG - €4.50 </button>
+                </div>
+            </section>
+    </section>
+
+    <section class="find" id="find">
+       <div class="location">
+        <h3>Our Location</h3>
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9710.201017302017!2d13.39229917551783!3d52.523477808669924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e0e874a123%3A0x6f7b77f2b76c11af!2sHackescher%20Markt%2013%2C%2010178%20Berlin!5e0!3m2!1sen!2sde!4v1722240809481!5m2!1sen!2sde" class="map" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="map"> </iframe>
+        <p> Hackescher Markt, 13, 10178 Berlin. </p>
+        <p class="pfont"> Open every day 8:00 am to 16:00 pm. </p>
+        <p class="pfont"> Come to visit us! </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-item">
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/whatsapp.png" alt="whatsappi-con">
+            </a>
+            <p class="p-footer">whatsapp</p>
+            </div>
+            <div class="footer-item">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/instaicon.png" alt="intagram-icon">
+            </a>
+            <p class="p-footer">Instagram</p>
+            </div>
+            <div class="footer-item">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/facebookicon.png" alt="facebook-icon">
+            </a>
+            <p class="p-footer">Facebook</p>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<!-- Modal do Carrinho -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="your-cart">Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <div id="total-price"></div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
